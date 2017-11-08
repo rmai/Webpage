@@ -160,6 +160,17 @@ spacing, color, etc. etc.
 */
 
 /* State Styles */
+#iit:hover,
+#mather:hover {
+  cursor: pointer;
+  color: white;
+}
+#iitad {
+  display: none;
+}
+#matherad {
+  display: none;
+}
 
 /*
 States of the browser and user access
