@@ -165,12 +165,6 @@ spacing, color, etc. etc.
   cursor: pointer;
   color: white;
 }
-#iitad {
-  display: none;
-}
-#matherad {
-  display: none;
-}
 
 /*
 States of the browser and user access
