@@ -108,10 +108,17 @@ Hint: these tend to be
 2. concerned with layout and spatial
 relationships
 */
-
+.info {
+  padding-left: 2em;
+}
 .nav a {
   text-decoration: none;
   color: white;
+}
+#matherad,
+#iitad {
+  padding-bottom: 0;
+  padding-left: 1em;
 }
 #navigation {
   position: absolute;
@@ -164,6 +171,13 @@ spacing, color, etc. etc.
 #mather:hover {
   cursor: pointer;
   color: white;
+}
+#iitad,
+#matherad {
+  color: red;
+}
+.info {
+  color: pink;
 }
 
 /*
