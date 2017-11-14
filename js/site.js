@@ -6,15 +6,16 @@
 
 $(document).ready(function(){
 
-	$('#iitad').remove();
-	$('#matherad').remove();
+  $('#iitad').remove();
+  $('#matherad').remove();
 
-$('#iit').one('click',function() {
-	var newline1 = $('<ul id="iitad"><li>10 West 35th Street Chicago, IL 60616</li></ul>');
-	$('#iit').append(newline1);
-});
-$('#mather').one('click',function() {
-	var newline2 = $('<ul id="matherad"><li>5835 North Lincoln Avenue Chicago, IL 60659</li></ul>');
-	$('#mather').append(newline2);
-});
+  $('#iit').one('click', function() {
+    var newline1 = $('<ul id="iitad"><li>10 West 35th Street Chicago, IL 60616</li></ul>');
+    $('#iit').append(newline1);
+  });
+
+  $('#mather').one('click', function() {
+    var newline2 = $('<ul id="matherad"><li>5835 North Lincoln Avenue Chicago, IL 60659</li></ul>');
+    $('#mather').append(newline2);
+  });
 });
