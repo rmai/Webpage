@@ -109,7 +109,9 @@ Hint: these tend to be
 relationships
 */
 .info {
+  padding-bottom: 0;
   padding-left: 2em;
+  list-style: circle;
 }
 .nav a {
   text-decoration: none;
