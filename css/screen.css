@@ -117,29 +117,11 @@ relationships
   padding-left: 2em;
   list-style: circle;
 }
-/*
-#slideshow {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  list-style: none;
-  float: right;
-}
-*/
-#slideshow {
-  list-style: none;
-}
-
 #matherad,
 #iitad {
   padding-bottom: 0;
   padding-left: 1em;
 }
-
-/*.game {
-  color: white;
-}*/
-
 #navigation {
   position: absolute;
   width: 100%;
@@ -176,6 +158,7 @@ relationships
   padding-bottom: 0;
 }
 #slideshow {
+  list-style: none;
   display: flex;
   flex-flow: row;
   align-items: center;
@@ -258,7 +241,7 @@ Hint: these tend to be:
     margin: auto;
   }
 }
-@media screen and (min-width: 31.125em) {
+@media screen and (min-width: 498px) {
   #bio {
     width: 66%;
     float: right;
@@ -273,8 +256,13 @@ Hint: these tend to be:
   #skills li {
     width: 50%;
   }
+  .slide {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 768px) {
   html {
     font-size: 1.266em;
     line-height: 1.08em;
@@ -285,6 +273,7 @@ Hint: these tend to be:
   h2 {
     font-size: 2.027em;
   }
+
   #likes {
     margin: 0;
     padding: 0;
