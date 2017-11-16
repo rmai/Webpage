@@ -6,6 +6,10 @@
 
 $(document).ready(function(){
 
+  var slides = document.querySelectorAll('#slideshow .slide');
+  var currentSlide = 0;
+  var slideInterval = setInterval(nextslide, 2000);
+
   $('#iitad').remove();
   $('#matherad').remove();
 
@@ -19,13 +23,9 @@ $(document).ready(function(){
     $('#mather').append(newline2);
   });
 
-  var slides = document.querySelectorAll('#slideshow .slide');
-  var currentSlide = 0;
-  var slideInterval = setInterval(nextslide,2000);
-
   function nextslide() {
-    slides[currentSlide].classname = "slide"
-    currentSlide = (currentSlide+1)%slides.length
+    slides[currentSlide].classname = "slide";
+    currentSlide = (currentSlide+1)%slides.length;
     slides[currentSlide].className= 'slide showing';
   }
 });
