@@ -63,6 +63,9 @@ p {
   padding-bottom: 1.222em;
   /* 22/18 = 1.222/2 = 0.611*/
 }
+img {
+  width: 100%;
+}
 li {
   padding-bottom: 0;
 }
@@ -105,6 +108,23 @@ Hint: these tend to be
 2. concerned with layout and spatial
 relationships
 */
+#slideshow {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.slide {
+  display: flex;
+  width: 25%;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.showing {
+  opacity: 1;
+  z-index: auto;
+}
+
 .info {
   padding-bottom: 0;
   padding-left: 2em;
@@ -114,8 +134,10 @@ relationships
   text-decoration: none;
   color: white;
 }
-#self {
-  width: 100%;
+.slideshow {
+  max-width: 62.5em;
+  position: relative;
+  margin: auto;
 }
 #matherad,
 #iitad {
@@ -218,7 +240,7 @@ Hint: these tend to be:
     font-size: 2.027em;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 68.75em) {
   #iit:hover,
   #mather:hover {
     color: white;
