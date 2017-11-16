@@ -88,9 +88,6 @@ li ol, li ul {
 li li ul {
   list-style-type: circle;
 }
-img {
-  width: 100%;
-}
 figcaption {
   text-align: center;
   padding-bottom: 1.222em;
@@ -116,6 +113,9 @@ relationships
 .nav a {
   text-decoration: none;
   color: white;
+}
+#self {
+  width: 100%;
 }
 #matherad,
 #iitad {
