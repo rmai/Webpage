@@ -108,36 +108,23 @@ Hint: these tend to be
 2. concerned with layout and spatial
 relationships
 */
-#slideshow {
-  list-style: none;
-  display: flex;
-  justify-content: center;
+#iit,
+#mather {
+  text-decoration: underline;
 }
-.slide {
-  display: flex;
-  width: 25%;
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.showing {
-  opacity: 1;
-  z-index: auto;
-}
-
 .info {
   padding-bottom: 0;
   padding-left: 2em;
   list-style: circle;
 }
-.nav a {
-  text-decoration: none;
-  color: white;
+#slideshow {
+  display: flex;
+  list-style: none;
+  float: right;
 }
-.slideshow {
-  max-width: 62.5em;
-  position: relative;
-  margin: auto;
+.slide {
+  display: flex;
+  width: 25%;
 }
 #matherad,
 #iitad {
@@ -210,6 +197,29 @@ Hint: these tend to be:
   }
   .info {
     padding-left: 2.5em;
+  }
+  #slideshow {
+    display: flex;
+    justify-content: center;
+    float: right;
+  }
+  .slide {
+    display: flex;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  .showing {
+    opacity: 1;
+    z-index: auto;
+  }
+  .nav a {
+    text-decoration: none;
+    color: white;
+  }
+  .slideshow {
+    max-width: 62.5em;
+    position: relative;
+    margin: auto;
   }
 }
 @media screen and (min-width: 31.125em) {
