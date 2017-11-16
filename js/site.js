@@ -18,5 +18,14 @@ $(document).ready(function(){
     var newline2 = $('<ul id="matherad"><li>5835 North Lincoln Avenue Chicago, IL 60659</li></ul>');
     $('#mather').append(newline2);
   });
-	
+
+  var slides = document.querySelectorAll('#slideshow .slide');
+  var currentSlide = 0;
+  var slideInterval = setInterval(nextslide,2000);
+
+  function nextslide() {
+    slides[currentSlide].classname = "slide"
+    currentSlide = (currentSlide+1)%slides.length
+    slides[currentSlide].className= 'slide showing';
+  }
 });
