@@ -117,20 +117,29 @@ relationships
   padding-left: 2em;
   list-style: circle;
 }
+/*
 #slideshow {
   display: flex;
+  flex-flow: row;
+  justify-content: space-between;
   list-style: none;
   float: right;
 }
-.slide {
-  display: flex;
-  width: 25%;
+*/
+#slideshow {
+  list-style: none;
 }
+
 #matherad,
 #iitad {
   padding-bottom: 0;
   padding-left: 1em;
 }
+
+/*.game {
+  color: white;
+}*/
+
 #navigation {
   position: absolute;
   width: 100%;
@@ -166,7 +175,11 @@ relationships
   list-style-type: none;
   padding-bottom: 0;
 }
-
+#slideshow {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
 /* Modular Styles */
 
 /*
@@ -191,6 +204,27 @@ Hint: these tend to be:
 2. Influenced by JavaScript
 3. Organized by Base, Layout, Module, State
 */
+@media screen and (min-wdith: 26.625em) {
+  .sidebyside {
+    display: flex;
+    height: 100%;
+  }
+  #likes {
+    margin: 0;
+    padding-right: 1em;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+  }
+  .slide {
+    margin: 0;
+    padding-left: 1em;
+    background-color: red;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
 @media screen and (min-width: 40em) {
   ul, ol {
     list-style-position: inside;
@@ -200,7 +234,9 @@ Hint: these tend to be:
   }
   #slideshow {
     display: flex;
-    justify-content: center;
+    flex-flow: row;
+    justify-content: space-between;
+    list-style: none;
     float: right;
   }
   .slide {
@@ -238,7 +274,7 @@ Hint: these tend to be:
     width: 50%;
   }
 }
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 48em) {
   html {
     font-size: 1.266em;
     line-height: 1.08em;
@@ -248,6 +284,21 @@ Hint: these tend to be:
   }
   h2 {
     font-size: 2.027em;
+  }
+  #likes {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+  }
+  .slide {
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 68.75em) {
