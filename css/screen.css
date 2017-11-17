@@ -26,8 +26,13 @@ html {
   font-family: sans-serif;
   line-height: 1.222em;
   /* 22/18=1.222 */
-  background-color: #95BDED;
-  padding: 0.75em;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebf1f6+0,abd3ee+50,89c3eb+51,d5ebfb+100;Blue+Gloss+%234 */
+  background: rgb(235,241,246); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(235,241,246,1) 0%, rgba(171,211,238,1) 50%, rgba(137,195,235,1) 51%, rgba(213,235,251,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(235,241,246,1) 0%,rgba(171,211,238,1) 50%,rgba(137,195,235,1) 51%,rgba(213,235,251,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(235,241,246,1) 0%,rgba(171,211,238,1) 50%,rgba(137,195,235,1) 51%,rgba(213,235,251,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=0 ); /* IE6-9 */
+  margin: 0.75em 0.75em 0.75em 0.75em;
 }
 body {
   padding-top: 2.444em;
@@ -98,7 +103,11 @@ figcaption {
 footer {
   display: flex;
   justify-content: center;
+  align-content: center;
   width: 100%;
+  background-color: #055174;
+  padding-top: 1em;
+  color: white;
 }
 /* Layout Styles */
 
@@ -145,9 +154,8 @@ relationships
   background-color: #055174;
 }
 #navigation a:hover {
-  background-color: #95BDED;
+  background-color: #D7E2EA;
   color: black;
-  font-size: 125%;
 }
 #contact li {
   list-style: none;
