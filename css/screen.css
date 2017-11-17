@@ -184,7 +184,8 @@ spacing, color, etc. etc.
 
 /* State Styles */
 #iit:hover,
-#mather:hover {
+#mather:hover,
+#footer:hover {
   cursor: pointer;
 }
 
