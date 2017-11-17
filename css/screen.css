@@ -101,6 +101,7 @@ figcaption {
   padding-bottom: 1.222em;
 }
 footer {
+  font-family: serif;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -154,7 +155,7 @@ relationships
   background-color: #055174;
 }
 #navigation a:hover {
-  background-color: #D7E2EA;
+  background-color: #def0fc;
   color: black;
 }
 #contact li {
