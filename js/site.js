@@ -11,7 +11,7 @@ $(document).ready(function(){
   var slideInterval = setInterval(nextslide, 2000);
 
   $('#footer').on('click',function() {
-    $('html, body').animate({ scrollTop: 0 }, 'fast');
+    $('html,body').scrollTop(0);
   })
 
   $('#iitad').remove();
