@@ -10,9 +10,9 @@ $(document).ready(function(){
   var currentSlide = 0;
   var slideInterval = setInterval(nextslide, 2000);
 
-  $('#footer').on('click',function() {
+  $('#footer').on('click', function() {
     $('html,body').scrollTop(0);
-  })
+  });
 
   $('#iitad').remove();
   $('#matherad').remove();
