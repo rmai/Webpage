@@ -8,7 +8,7 @@ $(document).ready(function(){
 
   var slides = document.querySelectorAll('#slideshow .slide');
   var currentSlide = 0;
-
+  //var slideInterval = setInterval(nextslide, 2000);
 
   $('#footer').on('click', function() {
     $('html,body').scrollTop(0);
@@ -27,11 +27,22 @@ $(document).ready(function(){
     $('#mather').append(newline2);
   });
 
-  setInterval(nextslide, 2000);
 
-  function nextslide() {
-    slides[currentSlide].classname = "slide";
-    currentSlide = (currentSlide+1)%slides.length;
-    slides[currentSlide].className= 'slide showing';
-  }
+  //function nextslide() {
+    //slides[currentSlide].classname = "slide";
+    //currentSlide = (currentSlide+1)%slides.length;
+    //slides[currentSlide].className= 'slide showing';
+  //}
+
+  $("#slideshow > figure:gt(0)").hide();
+
+  setInterval(function() {
+    $('#slideshow > figure:first')
+      .fadeOut(1000)
+      .next()
+      .fadeIn(1000)
+      .end()
+      .appendTo('#slideshow');
+}, 3000);
+
 });
