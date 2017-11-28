@@ -8,7 +8,7 @@ $(document).ready(function(){
 
   var slides = document.querySelectorAll('#slideshow .slide');
   var currentSlide = 0;
-  var slideInterval = setInterval(nextslide, 2000);
+
 
   $('#footer').on('click', function() {
     $('html,body').scrollTop(0);
@@ -27,6 +27,7 @@ $(document).ready(function(){
     $('#mather').append(newline2);
   });
 
+  setInterval(nextslide, 2000);
 
   function nextslide() {
     slides[currentSlide].classname = "slide";
