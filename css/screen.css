@@ -198,11 +198,9 @@ Hint: these tend to be:
 3. Organized by Base, Layout, Module, State
 */
 @media screen and (min-wdith: 26.625em) {
-  .sidebyside {
+  #likes {
     display: flex;
     height: 100%;
-  }
-  #likes {
     margin: 0;
     padding-right: 1em;
     background-color: green;
@@ -232,23 +230,9 @@ Hint: these tend to be:
     list-style: none;
     float: right;
   }
-  .slide {
-    display: flex;
-    opacity: 0;
-    transition: opacity 1s;
-  }
-  .showing {
-    opacity: 1;
-    z-index: auto;
-  }
   .nav a {
     text-decoration: none;
     color: white;
-  }
-  .slideshow {
-    max-width: 62.5em;
-    position: relative;
-    margin: auto;
   }
 }
 @media screen and (min-width: 498px) {
@@ -273,26 +257,30 @@ Hint: these tend to be:
   }
 }
 @media screen and (min-width: 600px) {
-  #slideshow {
-    margin: 50px auto;
-    position: relative;
-    width: 240px;
-    height: 240px;
-    padding: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  #likes {
+    width: 50%;
+    float: left;
   }
-  #slideshow > figure {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-  }
-  #slideshow {
+  #funpic {
+    width: 50%;
     float: right;
   }
-  .sidebyside {
-    width: 50%;
+  #slideshow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3.125em auto;
+    position: relative;
+    width: 15em;
+    height: 15em;
+    box-shadow: 0 0 1.25em rgba(0,0,0,0.4);
+  }
+  #slideshow > section {
+    position: absolute;
+    top: 0.625em;
+    left: 0.625em;
+    right: 0.625em;
+    bottom: 0.625em;
   }
 }
 @media screen and (min-width: 768px) {
@@ -317,7 +305,7 @@ Hint: these tend to be:
   #slideshow {
     width: 100%;
   }
-  .slide {
+  /*.slide {
     padding-right: 0;
     padding-left: 0;
     margin: 0;
@@ -325,7 +313,7 @@ Hint: these tend to be:
     align-content: center;
     justify-content: space-between;
     position: relative;
-  }
+  }*/
 }
 @media screen and (min-width: 65.25em) {
   #iit:hover,
