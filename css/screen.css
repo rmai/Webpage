@@ -173,6 +173,11 @@ relationships
   align-items: center;
   height: 9.375em;
 }
+#db,
+#boon {
+  cursor: pointer;
+  text-decoration: underline;
+}
 /* Modular Styles */
 
 /*
