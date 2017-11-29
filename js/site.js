@@ -6,8 +6,16 @@
 
 $(document).ready(function(){
 
+  var doublebass = new Audio('../audio/doublebass.mp3')
+  var bassoon = new Audio('../audio/boon.mp3')
 
+  $('#db').on('click', function() {
+    doublebass.play();
+  });
 
+  $('#boon').on('click', function() {
+    bassoon.play();
+  });
   $('#footer').on('click', function() {
     $('html,body').scrollTop(0);
   });
