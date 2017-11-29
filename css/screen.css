@@ -273,7 +273,6 @@ Hint: these tend to be:
     position: relative;
     width: 15em;
     height: 15em;
-    box-shadow: 0 0 1.25em rgba(0,0,0,0.4);
   }
   #slideshow > section {
     position: absolute;
@@ -296,24 +295,25 @@ Hint: these tend to be:
   }
 
   #likes {
+    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-flow: wrap;
     justify-content: space-around;
   }
-  #slideshow {
+  #funpic {
     width: 100%;
-  }
-  /*.slide {
-    padding-right: 0;
-    padding-left: 0;
-    margin: 0;
     display: flex;
-    align-content: center;
+    justify-content: space-around;
+  }
+  #slideshow {
+    display: flex;
+    flex-flow: row;
     justify-content: space-between;
-    position: relative;
-  }*/
+    list-style: none;
+    float: right;
+  }
 }
 @media screen and (min-width: 65.25em) {
   #iit:hover,
