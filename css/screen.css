@@ -171,6 +171,7 @@ relationships
   display: flex;
   flex-flow: row;
   align-items: center;
+  height: 9.375em;
 }
 /* Modular Styles */
 
@@ -281,7 +282,7 @@ Hint: these tend to be:
     right: 0.625em;
     bottom: 0.625em;
   }
-  
+
 }
 @media screen and (min-width: 768px) {
   html {
