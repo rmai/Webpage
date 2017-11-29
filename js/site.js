@@ -10,10 +10,12 @@ $(document).ready(function(){
   var bassoon = new Audio('../audio/boon.mp3')
 
   $('#db').on('click', function() {
+    bassoon.pause();
     doublebass.play();
   });
 
   $('#boon').on('click', function() {
+    doublebass.pause();
     bassoon.play();
   });
   $('#footer').on('click', function() {
