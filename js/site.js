@@ -31,7 +31,7 @@ $(document).ready(function(){
   });
 
   $('#mather').one('click', function() {
-    var newline2 = $('<ul id="matherad"><li>5<a href="https://www.google.com/maps/place/Mather+High+School/@41.9881003,-87.7016959,17z/data=!3m1!4b1!4m5!3m4!1s0x880fce1b63988d71:0x104592aab32b88eb!8m2!3d41.9881003!4d-87.6995072">835 North Lincoln Avenue Chicago, IL 60659</a></li></ul>');
+    var newline2 = $('<ul id="matherad"><li><a href="https://www.google.com/maps/place/Mather+High+School/@41.9881003,-87.7016959,17z/data=!3m1!4b1!4m5!3m4!1s0x880fce1b63988d71:0x104592aab32b88eb!8m2!3d41.9881003!4d-87.6995072">5835 North Lincoln Avenue Chicago, IL 60659</a></li></ul>');
     $('#mather').append(newline2);
   });
 
