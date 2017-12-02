@@ -211,7 +211,6 @@ Hint: these tend to be:
     margin: 0;
     padding-right: 1em;
     background-color: green;
-    display: flex;
     flex-direction: column;
   }
   .slide {
@@ -242,7 +241,7 @@ Hint: these tend to be:
     color: white;
   }
 }
-@media screen and (min-width: 498px) {
+@media screen and (min-width: 31.125em) {
   #bio {
     width: 66%;
     float: right;
@@ -263,7 +262,7 @@ Hint: these tend to be:
     flex-direction: column;
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
   #likes {
     width: 50%;
     float: left;
@@ -290,7 +289,7 @@ Hint: these tend to be:
   }
 
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
   html {
     font-size: 1.266em;
     line-height: 1.08em;
