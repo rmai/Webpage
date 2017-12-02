@@ -6,8 +6,8 @@
 
 $(document).ready(function(){
 
-  var doublebass = new Audio('../audio/doublebass.mp3')
-  var bassoon = new Audio('../audio/boon.mp3')
+  var doublebass = new Audio('../audio/doublebass.mp3');
+  var bassoon = new Audio('../audio/boon.mp3');
 
   $('#db').on('click', function() {
     bassoon.pause();
@@ -38,7 +38,7 @@ $(document).ready(function(){
   $('a[href^="http"]').on('click', function(e) {
     window.open($(this).attr('href'));
     e.preventDefault();
-});
+  });
 
   $("#slideshow > section:gt(0)").hide();
 
