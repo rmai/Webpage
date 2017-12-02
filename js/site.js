@@ -26,15 +26,19 @@ $(document).ready(function(){
   $('#matherad').remove();
 
   $('#iit').one('click', function() {
-    var newline1 = $('<ul id="iitad"><li>10 West 35th Street Chicago, IL 60616</li></ul>');
+    var newline1 = $('<ul id="iitad"><li><a href="https://www.google.com/maps/place/Illinois+Institute+of+Technology/@41.8348731,-87.6291946,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2c72d3e9a80f:0x91cbe4661afb6f1a!8m2!3d41.8348731!4d-87.6270059">10 West 35th Street Chicago, IL 60616</a></li></ul>');
     $('#iit').append(newline1);
   });
 
   $('#mather').one('click', function() {
-    var newline2 = $('<ul id="matherad"><li>5835 North Lincoln Avenue Chicago, IL 60659</li></ul>');
+    var newline2 = $('<ul id="matherad"><li>5<a href="https://www.google.com/maps/place/Mather+High+School/@41.9881003,-87.7016959,17z/data=!3m1!4b1!4m5!3m4!1s0x880fce1b63988d71:0x104592aab32b88eb!8m2!3d41.9881003!4d-87.6995072">835 North Lincoln Avenue Chicago, IL 60659</a></li></ul>');
     $('#mather').append(newline2);
   });
 
+  $('a[href^="http"]').on('click', function(e) {
+    window.open($(this).attr('href'));
+    e.preventDefault();
+});
 
   $("#slideshow > section:gt(0)").hide();
 
