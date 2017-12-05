@@ -106,6 +106,7 @@ footer {
   background-color: #688C95;
   padding-top: 1em;
   color: white;
+  height: 1em;
 }
 /* Layout Styles */
 
@@ -158,6 +159,13 @@ relationships
   background-color: #ADADAE;
   color: #485D62;
 }
+.cssgradients {
+  background: linear-gradient(cyan, white);
+}
+.cssgradients #navigation a:hover {
+  background-color: cyan;
+  color: black;
+}
 #contact li {
   list-style: none;
   padding-bottom: 0;
@@ -178,14 +186,11 @@ relationships
   cursor: pointer;
   text-decoration: underline;
 }
-.cssgradients {
-  background: linear-gradient(45deg, white, cyan);
-}
-.cssgradients #navigation a:hover {
-  background-color: cyan;
-  color: black;
-}
 
+#second {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}
 /* Modular Styles */
 
 /*
@@ -199,7 +204,7 @@ spacing, color, etc. etc.
 /* State Styles */
 #iit:hover,
 #mather:hover,
-#footer:hover {
+.footer:hover {
   cursor: pointer;
 }
 
