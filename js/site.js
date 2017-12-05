@@ -18,7 +18,7 @@ $(document).ready(function(){
     doublebass.pause();
     bassoon.play();
   });
-  $('#footer').on('click', function() {
+  $('.footer').on('click', function() {
     $('html,body').scrollTop(0);
   });
 
