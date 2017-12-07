@@ -35,11 +35,6 @@ $(document).ready(function(){
     $('#mather').append(newline2);
   });
 
-  $('a[href^="http"]').on('click', function(e) {
-    window.open($(this).attr('href'));
-    e.preventDefault();
-  });
-
   $("#slideshow > section:gt(0)").hide();
 
   setInterval(function() {
