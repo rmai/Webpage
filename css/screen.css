@@ -217,7 +217,7 @@ Hint: these tend to be:
 2. Influenced by JavaScript
 3. Organized by Base, Layout, Module, State
 */
-@media screen and (min-wdith: 26.625em) {
+@media screen and (min-width: 26.625em) {
   #likes {
     display: flex;
     height: 100%;
