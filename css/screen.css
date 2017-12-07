@@ -106,7 +106,8 @@ footer {
   background-color: #688C95;
   padding-top: 1em;
   color: white;
-  height: 1em;
+  left: 0;
+  line-height: 0;
 }
 /* Layout Styles */
 
@@ -160,7 +161,7 @@ relationships
   color: #485D62;
 }
 .cssgradients {
-  background: linear-gradient(45deg, cyan, white);
+  background: radial-gradient(cyan, white);
 }
 .cssgradients #navigation a:hover {
   background-color: white;
@@ -188,8 +189,7 @@ relationships
 }
 
 #second {
-  padding-top: 0.5em;
-  padding-bottom: 1em;
+  padding-bottom: 0;
   text-align: center;
 }
 /* Modular Styles */
