@@ -171,6 +171,9 @@ relationships
   list-style-type: none;
   padding-bottom: 0;
 }
+section {
+  text-align: center;
+}
 #slideshow {
   list-style: none;
   display: flex;
@@ -217,9 +220,6 @@ Hint: these tend to be:
   #likes {
     display: flex;
     height: 100%;
-    margin: 0;
-    padding-right: 1em;
-    background-color: green;
     flex-direction: column;
   }
   .slide {
