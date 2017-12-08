@@ -109,6 +109,9 @@ footer {
   left: 0;
   line-height: 0;
 }
+section {
+  text-align: center;
+}
 /* Layout Styles */
 
 /*
@@ -171,9 +174,7 @@ relationships
   list-style-type: none;
   padding-bottom: 0;
 }
-section {
-  text-align: center;
-}
+
 #slideshow {
   list-style: none;
   display: flex;
@@ -261,6 +262,7 @@ Hint: these tend to be:
   #skills {
     display: flex;
     flex-flow: wrap row;
+    text-align: left;
   }
   #skills li {
     width: 50%;
