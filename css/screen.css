@@ -160,7 +160,7 @@ relationships
   color: #485D62;
 }
 .cssgradients {
-  background: radial-gradient(cyan, white);
+  background: radial-gradient(white, cyan);
 }
 .cssgradients #navigation a:hover {
   background-color: white;
