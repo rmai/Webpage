@@ -47,6 +47,7 @@ h2 {
   /* 32.437px/18px = 1.802em */
   line-height: 1.356;
   /* 44/32.437 = 1.356 */
+  text-align: left;
 }
 h1 {
   font-family: cursive;
