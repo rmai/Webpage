@@ -45,7 +45,7 @@ h2 {
   /* 32.437px/18px = 1.802em */
   line-height: 1.356;
   /* 44/32.437 = 1.356 */
-  text-align: left;
+  text-align: center;
 }
 h1 {
   font-family: cursive;
@@ -164,9 +164,6 @@ relationships
 .cssgradients #navigation a:hover {
   background-color: #ffffff;
   color: black;
-}
-#name {
-  text-align: center;
 }
 #contact li {
   list-style: none;
