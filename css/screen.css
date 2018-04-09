@@ -26,7 +26,7 @@ html {
   font-family: sans-serif;
   line-height: 1.222em;
   /* 22/18=1.222 */
-  background: #ADADAE;
+  background: white;
   /*http://paletton.com/#uid=13n0u0k2GsW02Vj0cAa9+u88PjR*/
   margin: 0.75em 0.75em 0.75em 0.75em;
 
@@ -157,7 +157,7 @@ relationships
   background-color: #688C95;
 }
 #navigation a:hover {
-  background-color: #ADADAE;
+  background-color: white;
   color: #485D62;
 }
 .cssgradients {
